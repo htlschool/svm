@@ -1,0 +1,389 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+     <meta  charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.5 -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="plugins/datatables/dataTables.bootstrap.css">
+    <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+    <!-- AdminLTE Skins. Choose a skin from the css/skins
+         folder instead of downloading all of them to reduce the load. -->
+    <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
+    <script src="plugins/jQuery/jQuery-2.1.4.min.js"></script>
+    <!-- Bootstrap 3.3.5 -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- FastClick -->
+   <script src="plugins/fastclick/fastclick.min.js"></script>
+    <!-- AdminLTE App -->
+              <link rel="stylesheet" type="text/css" href="css/jquery.datetimepicker.css"/>
+    <script src="js/jquery.datetimepicker.full.js"></script>
+         
+    <script src="dist/js/app.min.js"></script>
+    <!-- Sparkline -->
+  
+    <!-- SlimScroll 1.3.0 -->
+    <script src="plugins/slimScroll/jquery.slimscroll.min.js"></script>
+    <!-- ChartJS 1.0.1 -->
+
+    <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <title>Himachal Shiksha Samiti</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+    <!-- Site wrapper -->
+    <div class="wrapper">
+    <form id="form1" runat="server">
+     <header class="main-header">
+        <!-- Logo -->
+        <a href="../../index2.html" class="logo">
+          <!-- mini logo for sidebar mini 50x50 pixels -->
+          <span class="logo-mini"><b>A</b>LT</span>
+          <!-- logo for regular state and mobile devices -->
+          <span class="logo-lg"><b>H.S.S</b> </span>
+        </a>
+        <!-- Header Navbar: style can be found in header.less -->
+        <nav class="navbar navbar-static-top" role="navigation">
+          <!-- Sidebar toggle button-->
+          <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <div class="navbar-custom-menu">
+            <ul class="nav navbar-nav">
+              <!-- Messages: style can be found in dropdown.less-->
+         
+              <!-- Tasks: style can be found in dropdown.less -->
+             
+              <!-- User Account: style can be found in dropdown.less -->
+              <li class="dropdown user user-menu">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <img src="dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+                  <span class="hidden-xs">H.S.S</span>
+                </a>
+                <ul class="dropdown-menu">
+                  <!-- User image -->
+                  <li class="user-header">
+                    <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                    <p>
+                 H.S.S
+                      <small></small>
+                    </p>
+                  </li>
+                  <!-- Menu Body -->
+                  <li class="user-body">
+                    <div class="col-xs-4 text-center">
+                      <a href="#">Followers</a>
+                    </div>
+                    <div class="col-xs-4 text-center">
+                      <a href="#">Sales</a>
+                    </div>
+                    <div class="col-xs-4 text-center">
+                      <a href="#">Friends</a>
+                    </div>
+                  </li>
+                  <!-- Menu Footer-->
+                  <li class="user-footer">
+                    <div class="pull-left">
+                      <a href="#" class="btn btn-default btn-flat">Profile</a>
+                    </div>
+                    <div class="pull-right">
+                      <a href="Default.aspx" class="btn btn-default btn-flat">Sign out</a>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <!-- Control Sidebar Toggle Button -->
+              <li>
+                <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+        <aside class="main-sidebar">
+        <!-- sidebar: style can be found in sidebar.less -->
+        <section class="sidebar">
+          <!-- Sidebar user panel -->
+          <div class="user-panel">
+            <div class="pull-left image">
+              <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+            </div>
+            <div class="pull-left info">
+              <p>H.S.S</p>
+              <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+            </div>
+          </div>
+          <!-- search form -->
+         
+          <!-- /.search form -->
+          <!-- sidebar menu: : style can be found in sidebar.less -->
+          <ul class="sidebar-menu">
+            <li class="header">MAIN NAVIGATION</li>
+            <li class="treeview">
+              <a href="DashBoard.aspx">
+                <i class="fa fa-dashboard"></i> <span>Dashboard</span> 
+              </a>
+                </li>
+              <li runat="server" id="ws" class="treeview">
+              <a href="WorkStatusCurrent.aspx">
+                <i class="fa fa-dashboard"></i> <span>Work Status</span> 
+              </a>
+            </li>
+              <li runat="server" visible="true" id="notepad" class="treeview">
+              <a href="NotePad.aspx">
+                <i class="fa fa-calendar"></i> <span>NotePad</span> 
+              </a>
+                  </li>
+
+
+              <li class="treeview">
+              <a href="Eventshows.aspx">
+                <i class="fa fa-calendar"></i> <span>Show Events</span> 
+              </a>
+              
+            </li>
+             
+       
+           <li runat="server" visible="true" id="crm" class="treeview">
+              <a href="#">
+                <i class="fa fa-files-o"></i>
+                <span>CRM</span><i class="fa fa-angle-left pull-right"></i>
+             
+              </a>
+              <ul runat="server" visible="true" id="crm1" class="treeview-menu">
+                       <li><a href="addsankul.aspx"><i class="fa fa-circle-o"></i>Add Sankul</a></li>
+                <li><a href="coursemaster.aspx"><i class="fa fa-circle-o"></i>course master</a></li>
+                <li><a href="classmaster.aspx"><i class="fa fa-circle-o"></i>class master</a></li>
+                <li><a href="examcreationmaster.aspx"><i class="fa fa-circle-o"></i>Add Exam</a></li>
+                <li><a href="sankulunderschool.aspx"><i class="fa fa-circle-o"></i>Sankul by shool</a></li>
+                <li><a href="schoolmaster.aspx"><i class="fa fa-circle-o"></i>School Master</a></li>
+
+                <li><a href="examfeemaster.aspx"><i class="fa fa-circle-o"></i>class Wise Exam Fee</a></li>
+                <li><a href="AddSalecustomer.aspx"><i class="fa fa-circle-o"></i>Add Sale/Loyalty Points</a></li>
+                <li><a href="clientsalereport.aspx"><i class="fa fa-circle-o"></i>Customer Sale Report</a></li>
+                <li><a href="customerBirthday.aspx"><i class="fa fa-circle-o"></i>Upcoming Birthday </a></li>
+                <li><a href="customerAniversary.aspx"><i class="fa fa-circle-o"></i>Upcoming Anniversary </a></li>
+                <li><a href="commanmessage.aspx"><i class="fa fa-circle-o"></i>Alerts to Customers </a></li>
+               
+                   <li><a href="BackLostCustomers.aspx"><i class="fa fa-circle-o"></i>Back Lost Customers</a></li>
+                <li><a href="CustomerAllSearch.aspx"><i class="fa fa-circle-o"></i>Search Customers</a></li>
+                <li><a href="SaleAnalysis.aspx"><i class="fa fa-circle-o"></i>Sales Analysis </a></li>
+                <li><a href="Remarks.aspx"><i class="fa fa-circle-o"></i>Remarks Report</a></li>
+
+              </ul>
+            </li>
+             <li runat="server" visible="false" id="hrm" class="treeview">
+              <a href="#">
+                <i class="fa fa-files-o"></i>
+                <span>HRM</span><i class="fa fa-angle-left pull-right"></i>
+             
+              </a>
+              <ul runat="server" visible="false" id="hrm1" class="treeview-menu">
+                <li><a href="AddEvents.aspx"><i class="fa fa-circle-o"></i> Add Events</a></li>
+                <li><a href="AddNewEmp.aspx"><i class="fa fa-circle-o"></i>Add/Edit Employee Detail</a></li>
+                <li><a href="EmpLeaveShow.aspx"><i class="fa fa-circle-o"></i> Employee Leave Mangament</a></li>
+                <li><a href="EmpBirthday.aspx"><i class="fa fa-circle-o"></i>Upcoming Birthday </a></li>
+                <li><a href="EmpAniversary.aspx"><i class="fa fa-circle-o"></i>Upcoming Anniversary </a></li>
+                <li><a href="AddCandidate_for_interview.aspx"><i class="fa fa-circle-o"></i>Add Candidates Coming for Interview</a></li>
+                <li><a href="addcourir.aspx"><i class="fa fa-circle-o"></i>Courier Details</a></li>
+                <li><a href="EmpSearch.aspx"><i class="fa fa-circle-o"></i>Employee Search</a></li>
+                <li><a href="UploadDocs.aspx"><i class="fa fa-circle-o"></i>Upload Documents</a></li>
+                <li><a href="WorkAssign.aspx"><i class="fa fa-circle-o"></i>Assign Work</a></li>
+                <li><a href="WorkStaus.aspx"><i class="fa fa-circle-o"></i>Work Status</a></li>
+                 <li><a href="Emp_wise_work.aspx"><i class="fa fa-circle-o"></i>Employee Wise Work Status</a></li>
+                 <li><a href="WorkStausComplete.aspx"><i class="fa fa-circle-o"></i>Complete Work Status</a></li>
+              </ul>
+            </li>
+                <li runat="server" visible="false" id="vms" class="treeview">
+              <a href="#">
+                <i class="fa fa-files-o"></i>
+                <span>VMS</span><i class="fa fa-angle-left pull-right"></i>
+             
+              </a>
+              <ul runat="server" visible="false" id="vms1" class="treeview-menu">
+                                  <li><a href="StockTaily.aspx"><i class="fa fa-circle-o"></i> Stock Tally</a></li>
+                                                  <li><a href="ViewStock.aspx"><i class="fa fa-circle-o"></i>View Stock Tally</a></li>
+                                                                    <li><a href="ViewStockReport.aspx"><i class="fa fa-circle-o"></i>View Stock Tally Report</a></li>
+
+                    
+                <li><a href="vendor_service.aspx"><i class="fa fa-circle-o"></i> Add Vendor Service</a></li>
+               
+
+                  <li><a href="AddNewVendor.aspx"><i class="fa fa-circle-o"></i> Add Vendor Detail</a></li>
+                                <li><a href="VendorFeedbackForm.aspx"><i class="fa fa-circle-o"></i>Vendor FeedBack</a></li>
+                    
+                <li><a href="SendMailToVender.aspx"><i class="fa fa-circle-o"></i>Send Message to vendor </a></li>
+              
+              </ul>
+            </li>
+               <li runat="server" visible="false" id="pms" class="treeview">
+              <a href="#">
+                <i class="fa fa-files-o"></i>
+                <span>PMS</span><i class="fa fa-angle-left pull-right"></i>
+             
+              </a>
+              <ul runat="server" visible="false" id="pms1" class="treeview-menu">
+               <li><a href="Addpackagetype.aspx"><i class="fa fa-circle-o"></i> Add Package Type</a></li>
+                <li><a href="AddPackageTypeSize.aspx"><i class="fa fa-circle-o"></i>Add Package Type Size </a></li>
+              <li><a href="AddPackagePice.aspx"><i class="fa fa-circle-o"></i> Add Package Piece According To Vendor</a></li>
+            
+              </ul>
+            </li>
+          </ul>
+        </section>
+        <!-- /.sidebar -->
+      </aside>
+    
+            
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+       
+          <footer class="main-footer">
+        <div class="pull-right hidden-xs">
+          <b>Version</b> 2.3.0
+        </div>
+        <strong>Copyright &copy; 2014-2015 <a href="http://almsaeedstudio.com">Himsaral++</a>.</strong> All rights reserved.
+      </footer>
+
+         <aside class="control-sidebar control-sidebar-dark">
+        <!-- Create the tabs -->
+        <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
+          <li><a href="#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-home"></i></a></li>
+
+          <li><a href="#control-sidebar-settings-tab" data-toggle="tab"><i class="fa fa-gears"></i></a></li>
+        </ul>
+        <!-- Tab panes -->
+        <div class="tab-content">
+          <!-- Home tab content -->
+          <div class="tab-pane" id="control-sidebar-home-tab">
+            <h3 class="control-sidebar-heading">Recent Activity</h3>
+            <ul class="control-sidebar-menu">
+              <li>
+                <a href="javascript::;">
+                  <i class="menu-icon fa fa-birthday-cake bg-red"></i>
+                  <div class="menu-info">
+                    <h4 class="control-sidebar-subheading">Langdon's Birthday</h4>
+                    <p>Will be 23 on April 24th</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="javascript::;">
+                  <i class="menu-icon fa fa-user bg-yellow"></i>
+                  <div class="menu-info">
+                    <h4 class="control-sidebar-subheading">Frodo Updated His Profile</h4>
+                    <p>New phone +1(800)555-1234</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="javascript::;">
+                  <i class="menu-icon fa fa-envelope-o bg-light-blue"></i>
+                  <div class="menu-info">
+                    <h4 class="control-sidebar-subheading">Nora Joined Mailing List</h4>
+                    <p>nora@example.com</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="javascript::;">
+                  <i class="menu-icon fa fa-file-code-o bg-green"></i>
+                  <div class="menu-info">
+                    <h4 class="control-sidebar-subheading">Cron Job 254 Executed</h4>
+                    <p>Execution time 5 seconds</p>
+                  </div>
+                </a>
+              </li>
+            </ul><!-- /.control-sidebar-menu -->
+
+            <h3 class="control-sidebar-heading">Tasks Progress</h3>
+            <ul class="control-sidebar-menu">
+              <li>
+                <a href="javascript::;">
+                  <h4 class="control-sidebar-subheading">
+                    Custom Template Design
+                    <span class="label label-danger pull-right">70%</span>
+                  </h4>
+                  <div class="progress progress-xxs">
+                    <div class="progress-bar progress-bar-danger" style="width: 70%"></div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="javascript::;">
+                  <h4 class="control-sidebar-subheading">
+                    Update Resume
+                    <span class="label label-success pull-right">95%</span>
+                  </h4>
+                  <div class="progress progress-xxs">
+                    <div class="progress-bar progress-bar-success" style="width: 95%"></div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="javascript::;">
+                  <h4 class="control-sidebar-subheading">
+                    Laravel Integration
+                    <span class="label label-warning pull-right">50%</span>
+                  </h4>
+                  <div class="progress progress-xxs">
+                    <div class="progress-bar progress-bar-warning" style="width: 50%"></div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="javascript::;">
+                  <h4 class="control-sidebar-subheading">
+                    Back End Framework
+                    <span class="label label-primary pull-right">68%</span>
+                  </h4>
+                  <div class="progress progress-xxs">
+                    <div class="progress-bar progress-bar-primary" style="width: 68%"></div>
+                  </div>
+                </a>
+              </li>
+            </ul><!-- /.control-sidebar-menu -->
+
+          </div><!-- /.tab-pane -->
+          <!-- Stats tab content -->
+          <div class="tab-pane" id="control-sidebar-stats-tab">Stats Tab Content</div><!-- /.tab-pane -->
+          <!-- Settings tab content -->
+          <div class="tab-pane" id="control-sidebar-settings-tab">
+ 
+          </div><!-- /.tab-pane -->
+        </div>
+      </aside><!-- /.control-sidebar -->
+      <!-- Add the sidebar's background. This div must be placed
+           immediately after the control sidebar -->
+      <div class="control-sidebar-bg"></div>
+    </div><!-- ./wrapper -->
+
+    <!-- jQuery 2.1.4 -->
+   
+        
+    </form>
+    
+            </div>
+</body>
+</html>
