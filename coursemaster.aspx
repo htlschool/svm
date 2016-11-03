@@ -37,7 +37,7 @@
                     </div>
 
                        <div class="form-group">
-                    <label>course Name:</label>
+                    <label>coursee Name:</label>
                   
                      
                      <asp:TextBox runat="server" class="form-control" id="TextBox1" placeholder="Enter course Name"></asp:TextBox>
